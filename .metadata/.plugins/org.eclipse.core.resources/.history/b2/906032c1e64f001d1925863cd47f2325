@@ -1,0 +1,38 @@
+package project2;
+
+public class UnsortedWordList extends WordList {
+	  
+	/*
+	 * Appends a WordNode data element to this LinkedList
+     * @param word Word object that is being appended into a WordNode.
+     */
+	
+	
+    public void add(Word word) {
+        WordNode temp = new WordNode(word);
+        last.next = temp;  
+        last = temp;
+        length++;
+        }
+    
+    public void printUnsortedList() {
+    	
+		WordNode p = WordList.intNode;
+		while (p.next != null) {
+		    //list.addElement(p.next.data);
+			System.out.println(p.next.data);
+		    p = p.next;
+		}
+    }
+
+	public static void main(String[] args) {
+		
+		UnsortedWordList a = new UnsortedWordList();
+		a.add(new Word("WHAT"));
+		a.add(new Word("NO way"));
+		
+		a.printUnsortedList();
+
+	}
+
+}

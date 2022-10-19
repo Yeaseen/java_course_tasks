@@ -1,0 +1,24 @@
+package project2;
+
+import javax.swing.JFrame;
+
+public class GuiView extends JFrame {
+	
+	JFrame jframe;
+	
+	public GuiView() {
+		jframe = new JFrame("My First JFrame GUI");
+		jframe.setVisible(true);
+		jframe.setSize(600,400);
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jframe.setLocationRelativeTo(null);
+		
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

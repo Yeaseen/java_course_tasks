@@ -1,0 +1,37 @@
+package project2;
+
+public class Word {
+	
+	
+	String word;
+
+    public Word(String word) {
+        this.word = word;
+    }
+
+    // method for converting a string into a word
+    public String toString() {
+        return word;
+    }
+
+    // returns negative number if first is < second
+    // returns positive number if first > second
+    // and zero if the same
+    public int compareTo(Word other) {
+        int value = word.compareToIgnoreCase(other.word);
+        return value;
+    }
+
+	public static void main(String[] args) {
+		
+		Word w1 = new Word("abc"),
+			 w2 = new Word("abc"),
+			 w3 = new Word("pqr"),
+			 w4 = new Word("aab");
+		System.out.println(w1.toString()+" "+w2.toString()+" "+w3.toString()+" "+w4.toString());
+		
+		System.out.println(w1.compareTo(w2));
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package project2;
+
+public class SortedWordList extends WordList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

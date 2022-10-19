@@ -1,0 +1,16 @@
+package project2;
+
+public abstract class WordList {
+	
+	static WordNode intNode = new WordNode(null);
+	
+    public WordNode first = intNode;
+    public WordNode last = intNode;
+    
+    public int length = 0;
+
+    public WordList() {
+    }
+    
+
+}
