@@ -11,7 +11,7 @@ public class Project2 {
 	public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 		
-		myFIle = new File("/Users/yeaseenarafat/Y_E_@_S_E_EN/JAVA/Project2/src/project2/input.txt");
+		myFIle = new File("/input.txt");
 	    Scanner sc = new Scanner(myFIle);
 	 
 	    while (sc.hasNextLine())
