@@ -1,7 +1,16 @@
 package project2;
 
 public class UnsortedWordList extends WordList {
-
+	  
+	
+//	public UnsortedWordList() {
+//		//first = intNode;
+//	    //last = intNode;
+//	}
+//	
+    
+    
+	
     public void append(String word) {
         WordNode temp = new WordNode(word);
         last.next = temp;  

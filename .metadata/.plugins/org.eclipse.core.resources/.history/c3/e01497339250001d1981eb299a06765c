@@ -6,14 +6,20 @@ public class ListTester {
 		SortedWordList b = new SortedWordList();
 		UnsortedWordList a = new UnsortedWordList();
 		a.append("What");
+		
 		b.add("What");
+		
+		
+		
+		
 		a.append("No");
+		
 		b.add("Now");
 		
 		
 		
 		b.printList();
-		System.out.println("==================");
+		System.out.println("okokok");
 		
 		
 		a.printList();

@@ -87,11 +87,13 @@ public class GuiView extends JFrame {
 		panel.add(new JScrollPane(originalTextArea));
 		
 		
-	
+		//unsortedL.printList();
 		populateUnsortedTextArea();
 		panel.add(new JScrollPane(unsortedTextArea));
 		
+		//panel.add(new JTextArea("helloo"));
 		
+		//sortedL.printList2();
 		populateSortedTextArea();
 		panel.add(new JScrollPane(sortedTextArea));
 		
@@ -102,5 +104,12 @@ public class GuiView extends JFrame {
 		jframe.setVisible(true);
 	}
 	
+
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		
+//		//GuiView v = new GuiView();
+//
+//	}
 
 }

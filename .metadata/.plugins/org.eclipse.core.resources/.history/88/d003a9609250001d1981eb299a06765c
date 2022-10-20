@@ -1,7 +1,7 @@
 Use linked lists to store and sort words
 Create a class called WordList based on the linked list with head node as shown in lecture. The
 data in the nodes should be a String.
-Create a class called 1 UnsortedWordList that extends WordList. It should have an append
+Create a class called UnsortedWordList that extends WordList. It should have an append
 method.
 Create a class called SortedWordList that extends WordList. It should have a method called add
 which takes a String as a parameter and inserts that word into the list in a position so that the

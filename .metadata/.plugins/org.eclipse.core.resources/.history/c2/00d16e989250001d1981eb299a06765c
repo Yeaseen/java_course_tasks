@@ -6,8 +6,14 @@ public class ListTester {
 		SortedWordList b = new SortedWordList();
 		UnsortedWordList a = new UnsortedWordList();
 		a.append("What");
+		
 		b.add("What");
+		
+		
+		
+		
 		a.append("No");
+		
 		b.add("Now");
 		
 		

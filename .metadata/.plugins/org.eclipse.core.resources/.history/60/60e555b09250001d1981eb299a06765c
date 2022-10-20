@@ -36,7 +36,7 @@ public class Project2 {
 				
 
 		
-					
+					//System.out.println(tempString);
 					// Add Words to LinkedLists
 					gui.sortedL.add(tempString);
 					

@@ -7,7 +7,10 @@ public abstract class WordList {
 	public  WordNode first=intNode;
 	public  WordNode last=intNode;
     public int length = 0;
-    
+
+    public WordList() {
+    	
+    }
     public void printList() {
     	
 		WordNode p = first;

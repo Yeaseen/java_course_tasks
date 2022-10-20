@@ -3,6 +3,11 @@ package project2;
 public class SortedWordList extends WordList {
 	
 	
+//	public SortedWordList() {
+//		//first = intNode;
+//	    //last = intNode;
+//	}
+	
 	public void add(String word) {
 		
 		 WordNode temp = new WordNode(word);

@@ -4,9 +4,10 @@ public abstract class WordList {
 	
 	public WordNode intNode = new WordNode(null);
 	
-	public  WordNode first=intNode;
-	public  WordNode last=intNode;
+	public  WordNode first, last=intNode;
+	//public  WordNode last=intNode;
     public int length = 0;
+
     
     public void printList() {
     	

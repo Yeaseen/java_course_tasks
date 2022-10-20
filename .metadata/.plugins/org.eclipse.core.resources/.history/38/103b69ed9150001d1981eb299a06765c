@@ -3,6 +3,11 @@ package project2;
 public class SortedWordList extends WordList {
 	
 	
+	public SortedWordList() {
+		//first = intNode;
+	    //last = intNode;
+	}
+	
 	public void add(String word) {
 		
 		 WordNode temp = new WordNode(word);
@@ -36,7 +41,15 @@ public class SortedWordList extends WordList {
 	        }
 	}
 	
-
+	public void printList2() {
+    	
+		WordNode p = first;
+		while (p.next != null) {
+		    
+			System.out.println(p.next.data);
+		    p = p.next;
+		}
+    }
 
 	public static void main(String[] args) {
 
@@ -44,7 +57,7 @@ public class SortedWordList extends WordList {
 		a.add("What");
 		a.add("No");
 		
-		a.printList();
+		a.printList2();
 
 	}
 
