@@ -2,8 +2,10 @@ package project2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+
 import java.util.StringTokenizer;
+
+
 
 public class Project2 {
 	
@@ -12,7 +14,7 @@ public class Project2 {
 	public static GuiView gui = new GuiView();
 
 	public static void main(String[] args) throws FileNotFoundException {
-		// TODO Auto-generated method stub
+		
 		
 		myFIle = new File("/Users/yeaseenarafat/Y_E_@_S_E_EN/JAVA/Project2/src/project2/input.txt");
 		
@@ -24,7 +26,7 @@ public class Project2 {
 	    while (line != null){
 	    	
 	    	
-	    	gui.originalString+=line+"\n";
+	    	gui.originalString+=line;
 	    	
 	    	StringTokenizer token = new StringTokenizer(line," ,.:;");
 	    	
@@ -36,8 +38,10 @@ public class Project2 {
 		
 					//System.out.println(tempString);
 					// Add Words to LinkedLists
+					gui.sortedL.add(tempString);
+					
 					gui.unsortedL.append(tempString);
-					//newwordGUI.sortedL.add(tempWord);
+					
 				
 
 			}

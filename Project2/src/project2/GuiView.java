@@ -9,6 +9,7 @@ import javax.swing.JTextArea;
 
 public class GuiView extends JFrame {
 	
+	
 	JFrame jframe;
 	GridLayout layout;
 	JPanel panel;
@@ -17,12 +18,22 @@ public class GuiView extends JFrame {
 	SortedWordList sortedL = new SortedWordList();
 	
 	String originalString = "";
-	JTextArea originalTextArea = new JTextArea("Displaying the original text \n\n");
+	JTextArea originalTextArea = new JTextArea("Displaying ORIGINAL text \n\n");
 	
-	JTextArea unsortedTextArea = new JTextArea("Displaying the unsorted linked list\n\n");
+	JTextArea unsortedTextArea = new JTextArea("Displaying UNSORTED linked list\n\n");
+	
+	JTextArea sortedTextArea = new JTextArea("Displaying SORTED linked list\n\n");
 	
 	public GuiView() {
 		
+	}
+	
+	public void populateOriginalTextArea() {
+		
+		originalTextArea.setEditable(false);
+		originalTextArea.setLineWrap(true);
+		originalTextArea.setWrapStyleWord(true);
+		originalTextArea.append(originalString);
 	}
 	
 	public void populateUnsortedTextArea() {
@@ -31,12 +42,29 @@ public class GuiView extends JFrame {
 		unsortedTextArea.setLineWrap(true);
 		unsortedTextArea.setWrapStyleWord(true);
 		
-		WordNode p = WordList.intNode;
+		WordNode p = unsortedL.first;
 		while (p.next != null) {
-		    
+			//System.out.println("in unSorted"+p.next.data);
 			unsortedTextArea.append(p.next.data+"\n");
 		    p = p.next;
 		}
+		
+	}
+	
+	public void populateSortedTextArea() {
+		
+		sortedTextArea.setEditable(false);
+		sortedTextArea.setLineWrap(true);
+		sortedTextArea.setWrapStyleWord(true);
+		
+		WordNode q = sortedL.first;
+		while (q.next != null) {
+		    //System.out.println("in Sorted"+q.next.data);
+			sortedTextArea.append(q.next.data+"\n");
+		    q = q.next;
+		}
+		
+		
 	}
 	
 	public void initiate() {
@@ -54,21 +82,23 @@ public class GuiView extends JFrame {
 		panel = new JPanel(layout);
 		
 		
-		panel.add(originalTextArea);
 		
-		
-		
-		populateUnsortedTextArea();
-		panel.add(new JScrollPane(unsortedTextArea));
-		
-		
-		
-		
-		
-		panel.add(new JTextArea("Displaying TextArea 3"));
+		populateOriginalTextArea();
+		panel.add(new JScrollPane(originalTextArea));
 		
 		
 		//unsortedL.printList();
+		populateUnsortedTextArea();
+		panel.add(new JScrollPane(unsortedTextArea));
+		
+		//panel.add(new JTextArea("helloo"));
+		
+		//sortedL.printList2();
+		populateSortedTextArea();
+		panel.add(new JScrollPane(sortedTextArea));
+		
+		
+		
 		
 		jframe.add(panel);
 		jframe.setVisible(true);

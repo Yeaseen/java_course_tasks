@@ -2,7 +2,14 @@ package project2;
 
 public class SortedWordList extends WordList {
 	
+	
+	public SortedWordList() {
+		first = intNode;
+	    last = intNode;
+	}
+	
 	public void add(String word) {
+		
 		 WordNode temp = new WordNode(word);
 	        //Check if there is a first node
 	        if (first.next == null) { 
@@ -33,14 +40,24 @@ public class SortedWordList extends WordList {
 	            length++;
 	        }
 	}
+	
+	public void printList2() {
+    	
+		WordNode p = first;
+		while (p.next != null) {
+		    
+			System.out.println(p.next.data);
+		    p = p.next;
+		}
+    }
 
 	public static void main(String[] args) {
 
 		SortedWordList a = new SortedWordList();
-		a.add("nHAT");
-		a.add("NO way");
+		a.add("What");
+		a.add("No");
 		
-		a.printList();
+		a.printList2();
 
 	}
 

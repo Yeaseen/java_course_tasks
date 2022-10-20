@@ -2,25 +2,16 @@ package project2;
 
 public abstract class WordList {
 	
-	static WordNode intNode = new WordNode(null);
+	public WordNode intNode = new WordNode(null);
 	
-    public WordNode first = intNode;
-    public WordNode last = intNode;
-    
+	public  WordNode first;
+	 public  WordNode last;
     public int length = 0;
 
     public WordList() {
-    }
-    
-    public void printList() {
     	
-		WordNode p = WordList.intNode;
-		while (p.next != null) {
-		    
-			System.out.println(p.next.data);
-		    p = p.next;
-		}
     }
     
+
 
 }

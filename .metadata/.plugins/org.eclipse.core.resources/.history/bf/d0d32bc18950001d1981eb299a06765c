@@ -1,0 +1,14 @@
+package project2;
+
+public class ListTester {
+
+	public static void main(String[] args) {
+		SortedWordList a = new SortedWordList();
+		a.add("What");
+		a.add("No");
+		
+		a.printList2();
+
+	}
+
+}

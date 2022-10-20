@@ -1,0 +1,31 @@
+package project2;
+
+public class ListTester {
+
+	public static void main(String[] args) {
+		SortedWordList a = new SortedWordList();
+		UnsortedWordList b = new UnsortedWordList();
+		a.add("What");
+		System.out.println(a.length);
+		b.append("Now");
+		System.out.println(a.length);
+		
+		
+		System.out.println(a.length);
+		
+		
+		a.add("No");
+		b.append("What");
+		
+		a.printList2();
+		
+		System.out.println("okokok");
+		
+		
+		
+		
+		b.printList();
+
+	}
+
+}
