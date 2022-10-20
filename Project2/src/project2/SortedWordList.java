@@ -40,7 +40,7 @@ public class SortedWordList extends WordList {
 		a.add("nHAT");
 		a.add("NO way");
 		
-		a.printUnsortedList();
+		a.printList();
 
 	}
 

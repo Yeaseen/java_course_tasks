@@ -1,6 +1,4 @@
-Hello;;;ss
-
-asa
-
-
-as
+This is an input file for project 1 in CSCI 212, Fall 2022 semester.
+The basic idea of this: project is to read lines from
+a file, and count the number of vowels; that appear on
+all the lines.

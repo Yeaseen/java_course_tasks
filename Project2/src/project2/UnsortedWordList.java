@@ -23,7 +23,7 @@ public class UnsortedWordList extends WordList {
 		a.append("WHAT");
 		a.append("NO way");
 		
-		a.printUnsortedList();
+		a.printList();
 
 	}
 

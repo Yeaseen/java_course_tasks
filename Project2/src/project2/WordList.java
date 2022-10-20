@@ -12,7 +12,7 @@ public abstract class WordList {
     public WordList() {
     }
     
-    public void printUnsortedList() {
+    public void printList() {
     	
 		WordNode p = WordList.intNode;
 		while (p.next != null) {
