@@ -18,6 +18,7 @@ public class GuiView extends JFrame {
 	SortedWordList sortedL = new SortedWordList();
 	
 	String originalString = "";
+	
 	JTextArea originalTextArea = new JTextArea("Displaying ORIGINAL text \n\n");
 	
 	JTextArea unsortedTextArea = new JTextArea("Displaying UNSORTED linked list\n\n");
@@ -33,6 +34,7 @@ public class GuiView extends JFrame {
 		originalTextArea.setEditable(false);
 		originalTextArea.setLineWrap(true);
 		originalTextArea.setWrapStyleWord(true);
+		
 		originalTextArea.append(originalString);
 	}
 	
@@ -64,10 +66,11 @@ public class GuiView extends JFrame {
 		    q = q.next;
 		}
 		
-		
+		 
 	}
 	
 	public void initiate() {
+		
 		jframe = new JFrame("Project 2-");
 		
 		jframe.setSize(700,600);

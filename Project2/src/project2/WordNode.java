@@ -2,7 +2,8 @@ package project2;
 
 public class WordNode {
 	
-	public String data;
+	public String data; 
+	
 	public WordNode next;
 	
 	

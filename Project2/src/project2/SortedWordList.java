@@ -7,7 +7,7 @@ public class SortedWordList extends WordList {
 		
 		 WordNode temp = new WordNode(word);
 	        //Check if there is a first node
-	        if (first.next == null) { 
+	        if (first.next == null) {  
 	            last.next = temp;
 	            last = temp;
 	            length++;

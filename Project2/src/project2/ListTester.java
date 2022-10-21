@@ -3,20 +3,26 @@ package project2;
 public class ListTester {
 
 	public static void main(String[] args) {
-		SortedWordList b = new SortedWordList();
+		
+		
 		UnsortedWordList a = new UnsortedWordList();
-		a.append("What");
+		SortedWordList b = new SortedWordList();
+		
+		a.append("What"); 
+		
 		b.add("What");
+		
 		a.append("No");
+		
 		b.add("Now");
 		
 		
 		
-		b.printList();
+		a.printList();
 		System.out.println("==================");
 		
 		
-		a.printList();
+		b.printList();
 
 	}
 

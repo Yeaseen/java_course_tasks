@@ -5,8 +5,6 @@ import java.io.FileNotFoundException;
 
 import java.util.StringTokenizer;
 
-
-
 public class Project2 {
 	
 	public static File myFIle;
@@ -18,7 +16,7 @@ public class Project2 {
 		
 		myFIle = new File("/Users/yeaseenarafat/Y_E_@_S_E_EN/JAVA/Project2/src/project2/input.txt");
 		
-		TextFileInput in = new TextFileInput(myFIle.toString());
+		TextFileInput in = new TextFileInput(myFIle.toString()); 
 		String line = in.readLine();
 		
 		
@@ -34,15 +32,11 @@ public class Project2 {
 
 				String tempString = token.nextToken();
 				
-
-		
-					
 					// Add Words to LinkedLists
 					gui.sortedL.add(tempString);
 					
 					gui.unsortedL.append(tempString);
 					
-				
 
 			}
 			// Queue next line for while loop
