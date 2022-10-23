@@ -5,7 +5,7 @@ public class UnsortedWordList extends WordList {
     
 	public void append(String word) {
         
-		WordNode temp = new WordNode(word);  
+	WordNode temp = new WordNode(word);  
 		
         last.next = temp;  
         last = temp;

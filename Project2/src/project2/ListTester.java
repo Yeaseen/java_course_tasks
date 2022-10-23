@@ -12,13 +12,14 @@ public class ListTester {
 		
 		b.add("What");
 		
-		a.append("No");
+		a.append("Now");
 		
 		b.add("Now");
 		
 		
 		
 		a.printList();
+
 		System.out.println("==================");
 		
 		
