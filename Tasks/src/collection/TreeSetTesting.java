@@ -17,10 +17,13 @@ public class TreeSetTesting {
         ts.add("Is");
         ts.add("Very helpful");
   
+        System.out.println(ts);
+         
+         
         // Traversing elements
-        Iterator<String> itr = ts.iterator();
-        while (itr.hasNext()) {
-            System.out.println(itr.next());
-        }
+//        Iterator<String> itr = ts.iterator();
+//        while (itr.hasNext()) {
+//            System.out.println(itr.next());
+//        }
     }
 }

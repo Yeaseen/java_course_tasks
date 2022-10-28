@@ -4,7 +4,6 @@ public class Outer2 {
 	// Method inside outer class
     void outerMethod()
     {
- 
         // Print statement
         System.out.println("inside outerMethod");
  

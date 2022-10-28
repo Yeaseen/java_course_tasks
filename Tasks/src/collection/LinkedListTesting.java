@@ -15,6 +15,10 @@ public class LinkedListTesting {
         // the end of the list
         for (int i = 0; i < 5; i++)
             ll.add(i);
+        
+        ll.add(67);
+        ll.add(13);
+        ll.add(45);
   
         // Printing elements
         System.out.println(ll);
@@ -26,9 +30,19 @@ public class LinkedListTesting {
         // after deletion
         System.out.println(ll);
   
+        
+        ll.sort(null);
+        
         // Printing elements one by one
         for (int i = 0; i < ll.size(); i++)
             System.out.print(ll.get(i) + " ");
+        
+        
+        
+         
+        
+        
+        
     }
 
 }

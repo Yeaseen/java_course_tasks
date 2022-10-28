@@ -15,6 +15,10 @@ public class VectorTesting {
         for (int i = 0; i < 5; i++)
             v.add(i);
   
+        
+        v.add(23);
+        v.add(15);
+        v.add(10);
         // Printing elements
         System.out.println(v);
   
@@ -24,6 +28,8 @@ public class VectorTesting {
         // Displaying the Vector
         // after deletion
         System.out.println(v);
+        
+        v.sort(null);
   
         // Printing elements one by one
         for (int i = 0; i < v.size(); i++)

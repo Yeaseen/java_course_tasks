@@ -12,9 +12,9 @@ public class Addition {
 	
 	protected int m=50;
 	
-	
-	
+
 	private int x;
+	
 	public void setX(int input) {
 		x = input;
 	}
@@ -22,9 +22,7 @@ public class Addition {
 		return x;
 	}
 	
-	
 	public int a=20;
-	
 	
 	public static void main(String[] args) {
 		Addition obj = new Addition();
