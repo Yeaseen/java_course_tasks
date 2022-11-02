@@ -71,7 +71,7 @@ public class GuiView extends JFrame {
 	
 	public void initiate() {
 		
-		jframe = new JFrame("Project 2-");
+		jframe = new JFrame("Project 2");
 		
 		jframe.setSize(700,600);
 		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

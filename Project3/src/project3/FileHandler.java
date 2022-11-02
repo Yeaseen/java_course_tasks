@@ -3,14 +3,14 @@ package project3;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.StringTokenizer; 
 public class FileHandler implements ActionListener {
 	
 	wordGUI newwordGUI;
 	
 	public FileHandler(wordGUI inputwordGUI) {
 		newwordGUI = inputwordGUI;
-	}
+	} 
 	
 	public void actionPerformed(ActionEvent event) {
 		String menuName;
@@ -63,15 +63,15 @@ public class FileHandler implements ActionListener {
 			line = in.readLine();
 			lineNo++;
 		}
-		//populateLists();
+		populateLists();
 		
 	}
 	/* Method to populate DefaultTableModels with data from text file.
 	 * 
 	 */
-//	private void populateLists() {
-//		newwordGUI.populateLists();
-//	}
+	private void populateLists() {
+		newwordGUI.populateLists();
+	}
 	
 	
 
