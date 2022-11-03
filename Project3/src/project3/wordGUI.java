@@ -11,7 +11,9 @@ import javax.swing.*;
 
 public class wordGUI extends JFrame { 
 	
-	public  LinkedList<wordLine> ll = new LinkedList<wordLine>();
+	public LinkedList<wordLine> ll = new LinkedList<wordLine>();
+	public LinkedList<wordLine> sortedL = new LinkedList<wordLine>();
+	
 	
 	JFrame jframe;
 	
@@ -28,6 +30,11 @@ public class wordGUI extends JFrame {
 		for (int i = 0; i < ll.size(); i++)
 			unsortedTextArea.append(ll.get(i).lineNum+" "+ll.get(i).word+"\n");
             
+	}
+	
+	public void populateListTasks() {
+		for (int i = 0; i < sortedL.size(); i++)
+			System.out.println(sortedL.get(i).lineNum+" "+sortedL.get(i).word);
 	}
 	
 	
