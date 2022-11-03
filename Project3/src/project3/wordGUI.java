@@ -23,18 +23,24 @@ public class wordGUI extends JFrame {
 	JPanel panel;
 	GridLayout layout;
 	
-	JTextArea unsortedTextArea = new JTextArea("LineNumber   Word\n");
+	JTextArea unsortedTextArea = new JTextArea("Please Select a File");
+	
+	JTextArea sortedTextArea = new JTextArea("Please Select an Option from List");
 	
 	public void populateUnsortedTextArea() {
-		
+		unsortedTextArea.setText(null);
+		unsortedTextArea.append("No.     unsortedWord\n");
 		for (int i = 0; i < ll.size(); i++)
 			unsortedTextArea.append(ll.get(i).lineNum+" "+ll.get(i).word+"\n");
             
 	}
 	
 	public void populateListTasks() {
+		sortedTextArea.setText(null);
+		sortedTextArea.append("No.     sortedWord\n");
 		for (int i = 0; i < sortedL.size(); i++)
-			System.out.println(sortedL.get(i).lineNum+" "+sortedL.get(i).word);
+			sortedTextArea.append(sortedL.get(i).lineNum+" "+sortedL.get(i).word+"\n");
+			//System.out.println(sortedL.get(i).lineNum+" "+sortedL.get(i).word);
 	}
 	
 	
@@ -52,25 +58,10 @@ public class wordGUI extends JFrame {
 		menu.add(openItem);
 		menu.addSeparator();
 		menu.add(quitItem);
-		menuBar.add(menu);
-		
-		
-		
-		
+		menuBar.add(menu);		
 	}
 	
-//	public void actionPerformed(ActionEvent e) {
-//		String menuName;
-//		menuName = e.getActionCommand();
-//		if (menuName.equals("A")) {
-//			System.out.println("A");
-//			
-//		}
-//		else if (menuName.equals("E")){
-//			System.out.println("E");
-//		}
-//	}
-	
+
 	public void addListMenu() {
 		list = new JMenu("List");
 		
@@ -85,12 +76,15 @@ public class wordGUI extends JFrame {
 		list.add(EItem);
 		list.addSeparator();
 		JMenuItem IItem = new JMenuItem("I");
+		IItem.addActionListener(lhc);
 		list.add(IItem);
 		list.addSeparator();
 		JMenuItem OItem = new JMenuItem("O");
+		OItem.addActionListener(lhc);
 		list.add(OItem);
 		list.addSeparator();
 		JMenuItem UItem = new JMenuItem("U");
+		UItem.addActionListener(lhc);
 		list.add(UItem);
 		
 		menuBar.add(list);
@@ -123,18 +117,21 @@ public class wordGUI extends JFrame {
 		unsortedTextArea.setEditable(false);
 		unsortedTextArea.setLineWrap(true);
 		unsortedTextArea.setWrapStyleWord(true);
-		
 		panel.add(new JScrollPane(unsortedTextArea));
+		
+		
+		sortedTextArea.setEditable(false);
+		sortedTextArea.setLineWrap(true);
+		sortedTextArea.setWrapStyleWord(true);
+		panel.add(new JScrollPane(sortedTextArea));
+		
+		
 		jframe.add(panel);
 		
 		// Show/Enable Frame
 		jframe.setVisible(true);
 	}
 	
-	public void populateLists() {
-		populateUnsortedTextArea();
-//		for (int i = 0; i < ll.size(); i++)
-//            System.out.println(ll.get(i).lineNum+" "+ll.get(i).word);
-	}
+
 
 }
