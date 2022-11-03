@@ -5,6 +5,8 @@ import java.util.LinkedList;
 public class wordList {
 	
 	public static LinkedList<wordLine> ll = new LinkedList<wordLine>();
+	
+	
 
 	public static void main(String[] args) {
 		
