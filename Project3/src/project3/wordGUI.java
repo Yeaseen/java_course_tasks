@@ -31,7 +31,7 @@ public class wordGUI extends JFrame {
 		unsortedTextArea.setText(null);
 		unsortedTextArea.append("No.     unsortedWord\n");
 		for (int i = 0; i < ll.size(); i++)
-			unsortedTextArea.append(ll.get(i).lineNum+" "+ll.get(i).word+"\n");
+			unsortedTextArea.append(ll.get(i).lineNum+"           "+ll.get(i).word+"\n");
             
 	}
 	
@@ -39,7 +39,7 @@ public class wordGUI extends JFrame {
 		sortedTextArea.setText(null);
 		sortedTextArea.append("No.     sortedWord\n");
 		for (int i = 0; i < sortedL.size(); i++)
-			sortedTextArea.append(sortedL.get(i).lineNum+" "+sortedL.get(i).word+"\n");
+			sortedTextArea.append(sortedL.get(i).lineNum+"           "+sortedL.get(i).word+"\n");
 			//System.out.println(sortedL.get(i).lineNum+" "+sortedL.get(i).word);
 	}
 	
