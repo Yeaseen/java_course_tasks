@@ -14,6 +14,7 @@ public class FileHandler implements ActionListener {
 	
 	@Override
 	public void actionPerformed(ActionEvent event) {
+		
 		String menuName;
 		menuName = event.getActionCommand();
 		if (menuName.equals("Open")) {
@@ -40,13 +41,17 @@ public class FileHandler implements ActionListener {
 	 * @param choosenFile
 	 */
 	private void readSource(File chosenFile) {
+		
 		TextFileInput in = new TextFileInput(chosenFile.toString());
 		String line = in.readLine();
 		int lineNo = 1;
+		
 		newwordGUI.ll.clear();
+		
 		while (line != null) {
 			// Split up sentences into individual words.
 			StringTokenizer token = new StringTokenizer(line," ,.:;");
+			
 			while (token.hasMoreTokens()) { // if more tokens exist, continue
 
 				String tempString = token.nextToken();

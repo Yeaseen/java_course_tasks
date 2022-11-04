@@ -10,6 +10,7 @@ public class ListHandler implements ActionListener {
 	public ListHandler(wordGUI inputwordGUI) {
 		newwordGUI = inputwordGUI;
 	} 
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String menuName;
@@ -19,7 +20,9 @@ public class ListHandler implements ActionListener {
 			//System.out.println("A");
 			newwordGUI.sortedL.clear();
 			for (int i = 0; i < newwordGUI.ll.size(); i++) {
+				
 				char atF= newwordGUI.ll.get(i).word.charAt(0);
+				
 				if( (atF == 'A') || (atF == 'a') ) {
 					newwordGUI.sortedL.add(newwordGUI.ll.get(i));
 				}

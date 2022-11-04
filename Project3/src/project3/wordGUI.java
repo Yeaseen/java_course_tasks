@@ -12,16 +12,18 @@ import javax.swing.*;
 public class wordGUI extends JFrame { 
 	
 	public LinkedList<wordLine> ll = new LinkedList<wordLine>();
+	
 	public LinkedList<wordLine> sortedL = new LinkedList<wordLine>();
 	
 	
 	JFrame jframe;
+	JPanel panel;
+	GridLayout layout;
+	
 	
 	JMenuBar menuBar = new JMenuBar();;
 	JMenu menu,list;
 	
-	JPanel panel;
-	GridLayout layout;
 	
 	JTextArea unsortedTextArea = new JTextArea("Please Select a File");
 	
@@ -29,6 +31,7 @@ public class wordGUI extends JFrame {
 	
 	public void populateUnsortedTextArea() {
 		unsortedTextArea.setText(null);
+		
 		unsortedTextArea.append("No.     unsortedWord\n");
 		for (int i = 0; i < ll.size(); i++)
 			unsortedTextArea.append(ll.get(i).lineNum+"           "+ll.get(i).word+"\n");
@@ -36,8 +39,11 @@ public class wordGUI extends JFrame {
 	}
 	
 	public void populateListTasks() {
+		
 		sortedTextArea.setText(null);
+		
 		sortedTextArea.append("No.     sortedWord\n");
+		
 		for (int i = 0; i < sortedL.size(); i++)
 			sortedTextArea.append(sortedL.get(i).lineNum+"           "+sortedL.get(i).word+"\n");
 			//System.out.println(sortedL.get(i).lineNum+" "+sortedL.get(i).word);
@@ -48,7 +54,9 @@ public class wordGUI extends JFrame {
 	public void addFileMenu() {
 		
 		menu = new JMenu("File");
+		
 		FileHandler fmh = new FileHandler(this);
+		
 		JMenuItem openItem = new JMenuItem("Open");
 		openItem.addActionListener(fmh);
 		
@@ -69,8 +77,10 @@ public class wordGUI extends JFrame {
 		
 		JMenuItem AItem = new JMenuItem("A");
 		AItem.addActionListener(lhc);
+		
 		list.add(AItem);
 		list.addSeparator();
+		
 		JMenuItem EItem = new JMenuItem("E");
 		EItem.addActionListener(lhc);
 		list.add(EItem);
@@ -102,6 +112,7 @@ public class wordGUI extends JFrame {
 	
 		
 		addFileMenu();
+		
 		addListMenu();
 		
 		jframe.setJMenuBar(menuBar);
