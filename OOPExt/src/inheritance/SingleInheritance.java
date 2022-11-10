@@ -1,4 +1,4 @@
-package demo;
+package inheritance;
 
 
 class one {
@@ -27,7 +27,7 @@ public class SingleInheritance {
         g.print_one();
         g.print_two();
         
-    }
+    } 
 }
 
 

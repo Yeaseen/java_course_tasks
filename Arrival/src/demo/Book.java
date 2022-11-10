@@ -1,6 +1,6 @@
 package demo;
 
-public class Book {
+class Book {
 
 	private String title;
 	private String author;
@@ -58,6 +58,7 @@ public class Book {
 
 
 }
+
 
 
 

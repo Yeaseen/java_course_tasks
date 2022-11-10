@@ -1,4 +1,5 @@
-package demo;
+package inheritance;
+
 
 class firstLevel {
 	
@@ -9,15 +10,15 @@ class firstLevel {
     }
 }
  
-class seconmdLevel extends firstLevel {
+class secondLevel extends firstLevel {
 	
 	public int seconmdLevel_legs = 10;
     public void print_two() { 
-    	System.out.println("class seconmdLevel has legs "+ seconmdLevel_legs); 
+    	System.out.println("class secondLevel has legs "+ seconmdLevel_legs); 
     	}
-}
+} 
 
-class thirdLevel extends seconmdLevel {
+class thirdLevel extends secondLevel {
 	
 	public int thirdLevel_legs = 15;
     public void print_three() { 
@@ -28,7 +29,7 @@ class thirdLevel extends seconmdLevel {
 
     	
     	System.out.println("class firstLevel legs "+ firstLevel_legs); 
-    	System.out.println("class seconmdLevel legs "+ seconmdLevel_legs); 
+    	System.out.println("class secondLevel legs "+ seconmdLevel_legs); 
     	System.out.println("class thirdLevel legs "+ thirdLevel_legs); 
     	}
 }
@@ -43,9 +44,10 @@ public class MultilevelInheritance {
         g.print_two();
         g.print_three();
         
-        
+        System.out.println("---------------------");
         g.print_allVariables();
         
     }
 }
+
 

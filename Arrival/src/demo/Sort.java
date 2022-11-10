@@ -15,7 +15,7 @@ public class Sort {
 	        }
 	   
 	        Arrays.sort(A);
-	 
+	  
 	       
 	        if ((A[0] * A[1]) > (A[n - 1] * A[n - 2])) {
 	            System.out.print("Pair is (" + A[0] + ',' + A[1] + ')');

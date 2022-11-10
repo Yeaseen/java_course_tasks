@@ -1,7 +1,6 @@
 package demo;
 
-public class Tester{
-	
+public class TesterBook {
 public static void main(String[] args) {
 		
 		Book b1 = new Book("Orientalism", "E W SAID", -45.55f);
@@ -18,5 +17,4 @@ public static void main(String[] args) {
 		System.out.println(b1.getPrice());
 
 	}
-	
 }
