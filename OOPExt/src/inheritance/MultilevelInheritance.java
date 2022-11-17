@@ -39,7 +39,7 @@ class thirdLevel extends secondLevel {
 public class MultilevelInheritance {
     public static void main(String[] args)
     {
-    	thirdLevel g = new thirdLevel();
+    	thirdLevel g = new thirdLevel(); 
         g.print_one();
         g.print_two();
         g.print_three();

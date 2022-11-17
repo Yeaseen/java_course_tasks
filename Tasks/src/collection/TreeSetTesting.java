@@ -20,10 +20,10 @@ public class TreeSetTesting {
         System.out.println(ts);
          
          
-        // Traversing elements
-//        Iterator<String> itr = ts.iterator();
-//        while (itr.hasNext()) {
-//            System.out.println(itr.next());
-//        }
+         //Traversing elements
+        Iterator<String> itr = ts.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
     }
 }

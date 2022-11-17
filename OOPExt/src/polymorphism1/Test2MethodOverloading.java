@@ -18,7 +18,13 @@ class Helper {
 public class Test2MethodOverloading {
 
 	public static void main(String[] args) {
+		
+		Helper obj = new Helper();
+		
+		System.out.println(obj.Multiply(3, 4));
+		
 		System.out.println(Helper.Multiply(2, 4));
+		
         System.out.println(Helper.Multiply(5.5, 6.3));
         System.out.println(Helper.Multiply(2, 7, 3));
 	}

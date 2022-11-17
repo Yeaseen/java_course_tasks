@@ -1,7 +1,17 @@
 package polymorphism1;
 
 class Shapes2 {
-	  public void area() {
+	
+	public Shapes2() {
+		
+	}
+	
+	public Shapes2(int p) {
+		
+	}
+	
+	
+	public void area() {
 	    System.out.println("Find area ");
 	  }
 	public void area(int r) {
@@ -15,8 +25,7 @@ class Shapes2 {
 	    System.out.println("Rectangle area="+l*b);
 	  }
 
-
-	}
+}
 
 public class TestMethodOverloading {
 
@@ -27,6 +36,7 @@ public class TestMethodOverloading {
 	    myShape.area(5);
 	    myShape.area(6.0,1.2);
 	    myShape.area(6,2);
+	    
 
 	}
 

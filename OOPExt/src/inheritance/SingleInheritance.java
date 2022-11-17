@@ -25,6 +25,7 @@ public class SingleInheritance {
     {
         two g = new two();
         g.print_one();
+        
         g.print_two();
         
     } 

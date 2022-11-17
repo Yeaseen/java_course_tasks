@@ -8,14 +8,15 @@ public class Circle extends Shape {
  
         // calling Shape constructor
         super(color);
+        
         System.out.println("Circle constructor called");
         this.radius = radius;
     } 
  
-    @Override 
+    @Override  
     double area() {
         return Math.PI * Math.pow(radius, 2);
-    }
+    } 
  
     @Override 
     public String toString() {

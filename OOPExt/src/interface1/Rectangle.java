@@ -5,8 +5,7 @@ class Rectangle implements Shape {
     int length, width;
  
     // constructor
-    Rectangle(int length, int width)
-    {
+    Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }
