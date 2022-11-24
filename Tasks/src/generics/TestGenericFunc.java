@@ -1,5 +1,7 @@
 package generics;
 
+
+
 public class TestGenericFunc {
 
 	static <T> void genericDisplay(T element)

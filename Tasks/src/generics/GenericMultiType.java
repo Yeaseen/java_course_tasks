@@ -21,12 +21,10 @@ class Test2<T, U>
  }
 }
 
-
 public class GenericMultiType {
 
 	public static void main(String[] args) {
-		Test2 <String, Integer> obj =
-	            new Test2<String, Integer>("GfG", 15);
+		Test2 <String, Integer> obj = new Test2<String, Integer>("GGGGGGG", 20);
 	  
 	        obj.print();
 

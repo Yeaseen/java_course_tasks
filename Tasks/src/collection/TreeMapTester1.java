@@ -10,8 +10,7 @@ public class TreeMapTester1 {
 		
 		System.out.println("TreeMap using TreeMap() constructor:\n");
 		
-        Map<Integer, String> tree_map
-            = new TreeMap<Integer, String>();
+        Map<Integer, String> tree_map = new TreeMap<Integer, String>(); 
   
         // Mapping string values to int keys
         // using put() method
@@ -23,6 +22,8 @@ public class TreeMapTester1 {
   
         // Printing the elements of TreeMap
         System.out.println("TreeMap: " + tree_map);
+        
+       
     }
 	
 
