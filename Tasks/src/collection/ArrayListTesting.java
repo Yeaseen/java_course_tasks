@@ -25,9 +25,7 @@ public class ArrayListTesting {
         // Remove element at index 3
         al.remove(5);
   
-        // Displaying the ArrayList
-        // after deletion
-        //System.out.println(al);
+
         
         for (int i = 0; i < al.size(); i++)
             System.out.print(al.get(i) + " ");

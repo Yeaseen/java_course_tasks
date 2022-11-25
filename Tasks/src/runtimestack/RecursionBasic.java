@@ -10,7 +10,7 @@ public class RecursionBasic {
 	
 	
 	public static int fibonacci(int num){
-		   if(num==0) //break condition of Recursion Since 0! is always 1
+		   if(num==0) 
 		      return 1;
 		   return num * factorial(num-1);
 		}
@@ -29,9 +29,8 @@ public class RecursionBasic {
 	    else if (b==0) 
 	        return a;
 	    else
-	        return 1 + addxy(a, b-1);
+	        return addxy(a, b-1) + 1;
 	}
-	
 	
 	
 	
@@ -39,15 +38,15 @@ public class RecursionBasic {
 	
 	public static void main(String[] args) {
 		
-		int result = addxy(2,6);
-		System.out.println(result);
+		//int result = addxy(2,6);
+		//System.out.println(result);
 		
 		
-		int result2 = factorial(4);
-		System.out.println(result2);
+		//int result2 = factorial(4);
+		//System.out.println(result2);
        
 		
-		 System.out.println(fib(8));
+		System.out.println(fib(7));
     }
    
 
